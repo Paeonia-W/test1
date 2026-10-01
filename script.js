@@ -1,6 +1,11 @@
 const button = document.getElementById('show-message');
 const message = document.getElementById('message');
+const nameInput = document.getElementById('name');
 
 button.addEventListener('click', () => {
-  message.textContent = '你好！你已成功点击按钮，欢迎探索 JavaScript 的交互效果。';
+  const name = nameInput.value.trim();
+  message.textContent = name ? `你好，${name}` : '请输入你的名字。';
+  if (!name) {
+    nameInput.focus();
+  }
 });

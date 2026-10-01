@@ -11,7 +11,9 @@
   <main class="card">
     <span class="label">HELLO, WORLD</span>
     <h1>欢迎来到 Test1</h1>
-    <p class="intro">这是一个使用 HTML、CSS 和 JavaScript 创建的简单网页。点击下面的按钮，看看会发生什么。</p>
+    <p class="intro">这是一个使用 HTML、CSS 和 JavaScript 创建的简单网页。输入你的名字，再点击下面的按钮，收获一句问候。</p>
+    <label class="name-label" for="name">你的名字</label>
+    <input id="name" type="text" placeholder="请输入名字" autocomplete="name">
     <button id="show-message" type="button" aria-controls="message">显示提示</button>
     <p id="message" class="message" role="status" aria-live="polite"></p>
   </main>
